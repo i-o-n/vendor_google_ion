@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     GoogleTTS \
     LatinIMEGooglePrebuilt \
     LocationHistoryPrebuilt \
+    Longshot \
     Maps \
     MarkupGoogle \
     Photos \
