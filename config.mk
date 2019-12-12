@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     PrebuiltGmail \
     SoundPickerPrebuilt \
     talkback \
+    WallpapersBReel2019 \
     WallpapersUsTwo \
     WebViewGoogle
 
@@ -73,8 +74,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH_PRODUCT)/usr,
 
 # overlays
 PRODUCT_PACKAGES += \
-    PixelDocumentsUIGoogleOverlay \
-    GooglePermissionControllerOverlay
+    PixelDocumentsUIGoogleOverlay
 
 # priv-app
 PRODUCT_PACKAGES += \
@@ -86,9 +86,7 @@ PRODUCT_PACKAGES += \
     GoogleDialer \
     GoogleDocumentsUIPrebuilt \
     GoogleFeedback \
-    GooglePackageInstaller \
     GooglePartnerSetup \
-    GooglePermissionControllerPrebuilt \
     GoogleServicesFramework \
     MatchmakerPrebuilt \
     Phonesky \
