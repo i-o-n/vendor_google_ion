@@ -15,7 +15,6 @@ PRODUCT_PACKAGES += \
     CalendarGooglePrebuilt \
     Chrome \
     Drive \
-    EmergencyInfoGoogleNoUi \
     GoogleContactsSyncAdapter \
     GoogleTTS \
     LatinIMEGooglePrebuilt \
