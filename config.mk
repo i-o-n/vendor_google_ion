@@ -74,6 +74,11 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH_PRODUCT)/lib,
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH_PRODUCT)/lib64,$(TARGET_COPY_OUT_PRODUCT)/lib64)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH_PRODUCT)/usr,$(TARGET_COPY_OUT_PRODUCT)/usr)
 
+# offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # overlays
 PRODUCT_PACKAGES += \
     PixelDocumentsUIGoogleOverlay
