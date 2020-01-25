@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
     LocationHistoryPrebuilt \
     Maps \
     MarkupGoogle \
-    NgaResources \
     Photos \
     PixelThemes \
     PrebuiltBugle \
@@ -95,7 +94,6 @@ PRODUCT_PACKAGES += \
     PixelLauncher \
     PixelSetupWizard \
     PrebuiltGmsCoreQt \
-    RecorderPrebuilt \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     SetupWizardPrebuilt \
