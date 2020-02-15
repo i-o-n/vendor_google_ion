@@ -14,6 +14,5 @@
      limitations under the License.
 -->
 <resources>
-    <string name="dialer_default_class" translatable="false">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
     <string name="ui_default_package" translatable="false">com.google.android.dialer</string>
 </resources>

@@ -14,6 +14,5 @@
      limitations under the License.
 -->
 <resources>
-    <string name="dialer_default_class" translatable="false">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
     <bool name="grant_location_permission_enabled">true</bool>
 </resources>
