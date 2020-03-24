@@ -89,7 +89,6 @@ PRODUCT_PACKAGES += \
     ConnMetrics \
     GoogleContacts \
     GoogleDialer \
-    GoogleDocumentsUIPrebuilt \
     GoogleFeedback \
     GooglePartnerSetup \
     GoogleServicesFramework \

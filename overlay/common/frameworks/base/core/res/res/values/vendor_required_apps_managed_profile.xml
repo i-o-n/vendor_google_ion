@@ -24,6 +24,6 @@
         <item>com.google.android.gms</item>
         <item>com.google.android.contacts</item>
         <item>com.google.android.apps.wellbeing</item>
-        <item>com.google.android.documentsui</item>
+        <item>com.android.documentsui</item>
     </string-array>
 </resources>

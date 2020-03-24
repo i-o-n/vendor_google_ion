@@ -35,6 +35,6 @@
         <item>com.google.android.setupwizard</item>
         <item>com.google.android.settings.intelligence</item>
         <item>com.android.settings.intelligence</item>
-        <item>com.google.android.documentsui</item>
+        <item>com.android.documentsui</item>
     </string-array>
 </resources>
