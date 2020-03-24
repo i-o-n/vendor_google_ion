@@ -79,10 +79,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
-# overlays
-PRODUCT_PACKAGES += \
-    PixelDocumentsUIGoogleOverlay
-
 # priv-app
 PRODUCT_PACKAGES += \
     AndroidMigratePrebuilt \
