@@ -98,7 +98,6 @@ PRODUCT_PACKAGES += \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     SetupWizardPrebuilt \
-    TipsPrebuilt \
     TurboPrebuilt \
     Velvet \
     WallpaperPickerGoogleRelease \
