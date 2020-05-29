@@ -16,6 +16,7 @@ PRODUCT_PACKAGES += \
     Chrome \
     Drive \
     GoogleContactsSyncAdapter \
+    GoogleExtShared \
     GoogleTTS \
     LatinIMEGooglePrebuilt \
     LocationHistoryPrebuilt \
@@ -58,6 +59,9 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc,$(TARGET
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH_PRODUCT)/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH_PRODUCT)/media/audio,$(TARGET_COPY_OUT_PRODUCT)/media/audio)
 
+# fonts config
+$(call inherit-product, $(LOCAL_PATH_PRODUCT)/fonts/fonts.mk)
+
 # framework
 PRODUCT_PACKAGES += \
     com.google.android.dialer.support \
@@ -67,9 +71,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay/common/
-
-# Inherit from fonts config
-$(call inherit-product, vendor/google/ion/product/fonts/fonts.mk)
 
 # libs
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH_PRODUCT)/lib,$(TARGET_COPY_OUT_PRODUCT)/lib)
@@ -85,10 +86,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AndroidMigratePrebuilt \
     AndroidPlatformServices \
+    CarrierServices \
     ConfigUpdater \
     ConnMetrics \
     GoogleContacts \
     GoogleDialer \
+    GoogleExtServicesPrebuilt \
     GoogleFeedback \
     GooglePartnerSetup \
     GoogleServicesFramework \
@@ -106,22 +109,31 @@ PRODUCT_PACKAGES += \
     WellbeingPrebuilt
 
 # props
-# Gestures
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
-
-# Sounds
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=The_big_adventure.ogg,The_big_adventure.ogg \
-    ro.config.notification_sound=Popcorn.ogg \
-    ro.config.alarm_alert=Bright_morning.ogg
-
 # Gboard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.bs_theme=true \
     ro.wallpapers_loc_request_suw=true \
     ro.com.google.ime.theme_id=5 \
     ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/d3_lms
+
+# Gestures
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# Google legal
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+
+# Google Play services configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.clientidbase=android-google \
+    ro.error.receiver.system.apps=com.google.android.gms \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+
+# OPA configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true
 
 # SetupWizard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -134,21 +146,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
     setupwizard.feature.show_pixel_tos=false
 
+# Sounds
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=The_big_adventure.ogg,The_big_adventure.ogg \
+    ro.config.notification_sound=Popcorn.ogg \
+    ro.config.alarm_alert=Bright_morning.ogg
+
 # StorageManager configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.storage_manager.show_opt_in=false
-
-# OPA configuration
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.opa.eligible_device=true
-
-# Google legal
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
-
-# Google Play services configuration
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.clientidbase=android-google \
-    ro.error.receiver.system.apps=com.google.android.gms \
-    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
