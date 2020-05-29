@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Pixel3ROM Project
+# Copyright (C) 2020 The ionOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,12 +33,12 @@ $(eval include $(BUILD_PREBUILT))
 endef
 
 font_src_files := \
-    GoogleSans-BoldItalic.ttf \
-    GoogleSans-Bold.ttf \
-    GoogleSans-Italic.ttf \
-    GoogleSans-MediumItalic.ttf \
-    GoogleSans-Medium.ttf \
-    GoogleSans-Regular.ttf
+    Chinacat-BoldItalic.ttf \
+    Chinacat-Bold.ttf \
+    Chinacat-Italic.ttf \
+    Chinacat-MediumItalic.ttf \
+    Chinacat-Medium.ttf \
+    Chinacat-Regular.ttf
 
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The Pixel3ROM Project
+# Copyright (C) 2020 The ionOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,36 @@
 # limitations under the License.
 #
 
+# apple-mint family
+PRODUCT_PACKAGES += \
+    AppleMint-BoldItalic.ttf \
+    AppleMint-Bold.ttf \
+    AppleMint-Italic.ttf \
+    AppleMint-MediumItalic.ttf \
+    AppleMint-Medium.ttf \
+    AppleMint-Regular.ttf
+
 # arbutus-slab family
 PRODUCT_PACKAGES += \
     ArbutusSlab-Regular.ttf
+
+# cartoonist-hand family
+PRODUCT_PACKAGES += \
+    CartoonistHand-BoldItalic.ttf \
+    CartoonistHand-Bold.ttf \
+    CartoonistHand-Italic.ttf \
+    CartoonistHand-MediumItalic.ttf \
+    CartoonistHand-Medium.ttf \
+    CartoonistHand-Regular.ttf
+
+# chinacat family
+PRODUCT_PACKAGES += \
+    Chinacat-BoldItalic.ttf \
+    Chinacat-Bold.ttf \
+    Chinacat-Italic.ttf \
+    Chinacat-MediumItalic.ttf \
+    Chinacat-Medium.ttf \
+    Chinacat-Regular.ttf
 
 # google-sans family
 PRODUCT_PACKAGES += \
@@ -36,6 +63,24 @@ PRODUCT_PACKAGES += \
     Lato-Medium.ttf \
     Lato-Regular.ttf
 
+# roboto family
+PRODUCT_PACKAGES += \
+    RobotoOrig-BoldItalic.ttf \
+    RobotoOrig-Bold.ttf \
+    RobotoOrig-Italic.ttf \
+    RobotoOrig-MediumItalic.ttf \
+    RobotoOrig-Medium.ttf \
+    RobotoOrig-Regular.ttf
+
+# rosemary family
+PRODUCT_PACKAGES += \
+    Rosemary-BoldItalic.ttf \
+    Rosemary-Bold.ttf \
+    Rosemary-Italic.ttf \
+    Rosemary-MediumItalic.ttf \
+    Rosemary-Medium.ttf \
+    Rosemary-Regular.ttf
+
 # rubik family
 PRODUCT_PACKAGES += \
     Rubik-BoldItalic.ttf \
@@ -44,6 +89,25 @@ PRODUCT_PACKAGES += \
     Rubik-MediumItalic.ttf \
     Rubik-Medium.ttf \
     Rubik-Regular.ttf
+
+# sanfransisco family
+PRODUCT_PACKAGES += \
+    SanFransisco-BoldItalic.ttf \
+    SanFransisco-Bold.ttf \
+    SanFransisco-MediumItalic.ttf \
+    SanFransisco-Medium.ttf \
+    SanFransisco-Regular.ttf
+
+# slatepro family
+PRODUCT_PACKAGES += \
+    SlatePro-BlackItalic.ttf \
+    SlatePro-Black.ttf \
+    SlatePro-BoldItalic.ttf \
+    SlatePro-Bold.ttf \
+    SlatePro-MediumItalic.ttf \
+    SlatePro-Medium.ttf \
+    SlateProSans-Italic.ttf \
+    SlateProSans-Regular.ttf
 
 # zilla-slab family
 PRODUCT_PACKAGES += \
