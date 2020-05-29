@@ -1,81 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016 The Pure Nexus Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+/*
+** Copyright (C) 2020 The ionOS Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
-    <bool name="config_useRoundIcon">true</bool>
-
-    <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
-    <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
-
-    <!-- Misc -->
-    <bool name="config_swipe_up_gesture_setting_available">true</bool>
-    <bool name="config_smart_battery_available">true</bool>
-    <string name="config_headlineFontFamily">google-sans</string>
-    <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
-    <string name="config_headlineFontFeatureSettings">ss03</string>
-    <bool name="config_buttonTextAllCaps">false</bool>
-    <bool name="config_unplugTurnsOnScreen">true</bool>
-    <bool name="config_sendPackageName">true</bool>
-    <integer name="config_maxShortcutTargetsPerApp">8</integer>
-    <integer name="config_storageManagerDaystoRetainDefault">60</integer>
-
-    <string name="config_defaultBrowser">com.android.chrome</string>
-    <string name="config_defaultSms">com.google.android.apps.messaging</string>
-
-    <bool name="config_enableAutoPowerModes">true</bool>
-    <bool name="config_showGesturalNavigationHints">true</bool>
-
-    <string-array name="config_defaultFirstUserRestrictions">
-        <item>no_oem_unlock</item>
-    </string-array>
-    <string-array name="config_nightDisplayColorTemperatureCoefficients">
-        <item>0.0</item>
-        <item>0.0</item>
-        <item>1.0</item>
-        <item>-0.000000014365268757</item>
-        <item>0.000255092801250106</item>
-        <item>-0.064156942434907716</item>
-        <item>-0.000000000910931179</item>
-        <item>0.000207598323269139</item>
-        <item>-0.349361641294833436</item>
-    </string-array>
-
-    <color name="background_device_default_light">#ffffffff</color>
-    <color name="background_floating_device_default_dark">#ff3c4043</color>
-    <color name="error_color_device_default_dark">#fff28b82</color>
-    <color name="error_color_device_default_light">#ffd93025</color>
-    <color name="primary_dark_device_default_dark">#ff242424</color>
-    <color name="primary_dark_device_default_settings">#ff000000</color>
-    <color name="primary_dark_device_default_settings_light">#ffffffff</color>
-    <color name="primary_device_default_dark">#ff2d2d2d</color>
-    <color name="primary_device_default_settings">#ff2d2d2d</color>
-    <color name="primary_device_default_settings_light">#ffffffff</color>
-    <color name="quaternary_device_default_settings">#ff9e9e9e</color>
-    <color name="secondary_device_default_settings">#ff3a3a3a</color>
-    <color name="system_error">#ffea4335</color>
-    <color name="tertiary_device_default_settings">#ff616161</color>
-
     <!-- An array of packages that need to be treated as type service in battery settings -->
     <string-array name="config_batteryPackageTypeService">
         <item>com.google.android.gms</item>
         <item>com.google.android.apps.gcs</item>
     </string-array>
-
 
     <!-- An array of packages for which notifications cannot be blocked.
          Should only be used for core device functionality that must not be
@@ -304,8 +250,17 @@
     <!-- The name of the package that will hold the dialer role by default. -->
     <string name="config_defaultDialer">com.google.android.dialer</string>
 
+    <!-- The name of the package that will hold the gallery role by default. -->
     <string name="config_defaultGallery">com.google.android.apps.photos</string>
+
+    <!-- The name of the package that will hold the music role by default. -->
     <string name="config_defaultMusic">com.google.android.music</string>
+
+    <!-- The name of the package that will hold the browser role by default. -->
+    <string name="config_defaultBrowser">com.android.chrome</string>
+
+    <!-- The name of the package that will hold the sms role by default. -->
+    <string name="config_defaultSms">com.google.android.apps.messaging</string>
 
     <!-- Package name for the device provisioning package. -->
     <string name="config_deviceProvisioningPackage">com.google.android.apps.work.oobconfig</string>
@@ -378,4 +333,51 @@
 
     <!-- Corner radius of system progress bars -->
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
+
+    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
+    <bool name="config_useRoundIcon">true</bool>
+
+    <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
+    <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
+
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+    <!-- Flag indicating whether we should enable smart battery. -->
+    <bool name="config_smart_battery_available">true</bool>
+
+    <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
+    <string name="config_headlineFontFamily">google-sans</string>
+
+    <!-- Name of the font family used for system surfaces where the font should use medium weight -->
+    <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
+
+    <!-- Allows setting custom fontFeatureSettings on specific text. -->
+    <string name="config_headlineFontFeatureSettings">ss03</string>
+
+    <!-- Controls whether system buttons use all caps for text -->
+    <bool name="config_buttonTextAllCaps">false</bool>
+
+    <bool name="config_unplugTurnsOnScreen">true</bool>
+    <bool name="config_sendPackageName">true</bool>
+    <integer name="config_maxShortcutTargetsPerApp">8</integer>
+    <integer name="config_storageManagerDaystoRetainDefault">60</integer>
+    <bool name="config_enableAutoPowerModes">true</bool>
+    <bool name="config_showGesturalNavigationHints">true</bool>
+
+    <string-array name="config_defaultFirstUserRestrictions">
+        <item>no_oem_unlock</item>
+    </string-array>
+
+    <string-array name="config_nightDisplayColorTemperatureCoefficients">
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>1.0</item>
+        <item>-0.000000014365268757</item>
+        <item>0.000255092801250106</item>
+        <item>-0.064156942434907716</item>
+        <item>-0.000000000910931179</item>
+        <item>0.000207598323269139</item>
+        <item>-0.349361641294833436</item>
+    </string-array>
 </resources>
