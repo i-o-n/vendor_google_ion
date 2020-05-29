@@ -28,6 +28,10 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.refreshratecontrol">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.systemui">
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
@@ -108,6 +112,10 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.READ_WALLPAPER_INTERNAL"/>
         <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.google.android.apps.wearables.maestro.companion">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.apps.work.oobconfig">
