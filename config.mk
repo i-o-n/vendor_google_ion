@@ -1,9 +1,9 @@
 ifeq ($(TARGET_G_ARCH),)
-$(error "GAPPS: TARGET_G_ARCH is undefined")
+#(error "GAPPS: TARGET_G_ARCH is undefined")
 endif
 
 ifneq ($(TARGET_G_ARCH),arm64)
-$(error "GOOGLE: Only arm64 is allowed")
+#(error "GOOGLE: Only arm64 is allowed")
 endif
 
 # app
